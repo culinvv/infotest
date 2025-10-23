@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>林芳如（Reese Lin）— 個人名片</title>
+
+  <!-- 外部樣式表（請在同目錄放置 style.css） -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>林芳如（Reese Lin）</h1>
+    <h2>前端工程師（Front-end Developer）</h2>  
+  </header>
+
+  <main>
+    <figure>
+      <img
+        src="images.png"
+        alt="林芳如（Reese Lin）頭像"
+        width="240"
+        height="240"
+      >
+      <figcaption>林芳如 — Front-end Developer</figcaption>
+    </figure>
+
+    <section aria-labelledby="about-me">
+      <h3 id="about-me">自我介紹</h3>
+      <p>
+        嗨，我是林芳如，熱愛設計與開發兼具美感與效能的網站。閒暇時喜歡拍照與旅遊。
+      </p>
+    </section>
+
+    <!-- 新增互動按鈕 -->
+    <button id="thankBtn">Reese Lin</button>
+  </main>
+
+  <footer>
+    <section aria-labelledby="contact">
+      <h3 id="contact">聯絡資訊</h3>
+      <ul>
+        <li>Email: <a href="mailto:culinvv@gmail.com">culinvv@gmail.com</a></li>
+        <li>電話: <a href="tel:+886981347463">+886-981347463</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="social">
+      <h3 id="social">社群連結</h3>
+      <ul>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      </ul>
+    </section>
+
+    <!-- 新增提示文字容器 -->
+    <p id="thankMessage" style="display:none; margin-top:1rem; color:#0077cc; font-weight:bold;">
+      謝謝瀏覽我的名片！
+    </p>
+  </footer>
+
+  <!-- 外部 JavaScript（請放在同資料夾） -->
+  <script src="script.js"></script>
+</body>
+</html>

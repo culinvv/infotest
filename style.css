@@ -1,0 +1,144 @@
+/* ===========================
+   Reese Lin 名片樣式表
+   檔案：style.css
+   =========================== */
+
+/* ---- 全域設定 ---- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* ---- 頁首 ---- */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+/* ---- 主內容 ---- */
+main {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+figure {
+  margin-bottom: 1.2rem;
+}
+
+figure img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #e0e6ed;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* ---- 自我介紹 ---- */
+section#about-me {
+  margin-top: 1rem;
+}
+
+section#about-me h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+section#about-me p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ---- 頁尾 ---- */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer section {
+  margin-bottom: 1.2rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 0.2rem 0;
+}
+
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #005fa3;
+}
+
+/* ---- 響應式設計 ---- */
+@media (max-width: 480px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  figure img {
+    width: 140px;
+    height: 140px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
